@@ -1,11 +1,13 @@
 Package: DistMap
 Type: Package
-Title: What the Package Does (Title Case)
+Title: DistMap
 Version: 0.1.0
-Author: Who wrote it
-Maintainer: The package maintainer <yourself@somewhere.net>
-Description: More about what it does (maybe more than one line)
-    Use four spaces when indenting paragraphs within the Description.
-License: What license is it under?
+Author: Nikos Karaiskos
+Maintainer: Nikos Karaiskos <nikolaos.karaiskos@mdc-berlin.de>
+Depends:
+    ggplot2
+Description: A package for spatial mapping of single cell RNA sequencing data based on distributed scores.
+License: MIT License
 Encoding: UTF-8
 LazyData: true
+RoxygenNote: 6.0.1
