@@ -8,8 +8,7 @@ by using an existing reference database of in situs.
 DistMap accompanies the following publication
 
 *The Drosophila Embryo at Single Cell Transcriptome Resolution*, <br />
-[bioRxiv](http://www.biorxiv.org/content/early/2017/03/17/117382) (2017)
-doi: https://doi.org/10.1101/117382 
+[*Science* 358, 194 (2017)](http://science.sciencemag.org/content/358/6360/194)
 
 N. Karaiskos<sup>#</sup>, P. Wahle<sup>#</sup>, J. Alles, A. Boltengagen,
 S. Ayoub, C. Kocks, N. Rajewsky<sup>&</sup> and R. Zinzen<sup>&</sup>
