@@ -1,7 +1,7 @@
 Package: DistMap
 Type: Package
 Title: DistMap
-Version: 0.1.0
+Version: 0.1.1
 Author: Nikos Karaiskos
 Maintainer: Nikos Karaiskos <nikolaos.karaiskos@mdc-berlin.de>
 Depends:

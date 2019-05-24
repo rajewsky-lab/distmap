@@ -67,6 +67,7 @@ setMethod(f = "binarizeSingleCellData",
             return (object)
           })
 
+
 #' Compute Matthews Correlation Coefficients
 #'
 #' Computes MCC scores and adds them to the \code{DistMap} object. Requires the \code{binarized.data}
@@ -86,8 +87,12 @@ setMethod(f = "computeMCC",
             TP = rowSums(mtrx == 1)
             TN = rowSums(mtrx == 0)
             FN = rowSums(mtrx == -1)
-            return ((TP*TN - FP*FN)/sqrt((TP+FP)*(TP+FN)*(TN+FP)*(TN+FN)))
+            MCC <- (TP*TN - FP*FN)/sqrt((TP+FP)*(TP+FN)*(TN+FP)*(TN+FN))
+            MCC[is.na(MCC)] <- 0
+
+            return (MCC)
           })
+
 
 #' Map cells
 #'
@@ -106,6 +111,7 @@ setMethod(f = "mapCells",
             object@mcc.scores <- mcc.scores
             return (object)
           })
+
 
 #' Compute vISH
 #'
