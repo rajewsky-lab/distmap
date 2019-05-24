@@ -27,6 +27,15 @@ install_github("rajewsky-lab/DistMap")
 ```
 
 ## Usage
+
+### Reading the data
+Pay extra attention if you read data with different commands, for instance
+`read.table` against `fread` from the `data.table` package. Gene names which
+contain `-`s or other special characters might be read differently. In that
+case you'll probably encounter an error during binarization of the data (see
+below).
+
+### Mapping the data
 The `DistMap` object is used to store the following structures:
 * `raw.data`, the raw data (e.g. UMI counts) of the experiment, provided
 by the user as a matrix with genes as rows and cells as columns.
